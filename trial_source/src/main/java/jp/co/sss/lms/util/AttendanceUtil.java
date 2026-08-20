@@ -147,4 +147,56 @@ public class AttendanceUtil {
 		return false;
 	}
 
+	/**
+	 * 時間のプルダウン
+	 */
+
+	public LinkedHashMap<Integer, String> getHourMap() {
+		LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+		map.put(null, "");
+
+		for (int i = 0; i < 24; i++) {
+			map.put(i, String.format("%02d", i));
+		}
+
+		return map;
+	}
+
+	/**
+	 * 分のプルダウン
+	 */
+
+	public LinkedHashMap<Integer, String> getMinuteMap() {
+		LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+		map.put(null, "");
+
+		for (int i = 0; i < 60; i++) {
+			map.put(i, String.format("%02d", i));
+		}
+
+		return map;
+	}
+
+	/**
+	 * 時間（時）の切り出し
+	 */
+	public Integer getHour(String time) {
+		if (time == null || time.isEmpty()) {
+			return null;
+		}
+
+		return Integer.parseInt(time.split(":")[0]);
+	}
+
+	/**
+	 * 時間（分）の切り出し
+	 */
+	public Integer getMinute(String time) {
+		if (time == null || time.isEmpty()) {
+			return null;
+		}
+
+		return Integer.parseInt(time.split(":")[1]);
+	}
+
 }

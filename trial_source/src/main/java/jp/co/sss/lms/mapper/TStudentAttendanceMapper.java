@@ -70,10 +70,13 @@ public interface TStudentAttendanceMapper {
 	/**
 	 * 勤怠情報未入力チェック
 	 * 
-	 * @param tStudentAttendance
+	 * @author t-kasatsugu-Task.26
+	 * @param lmsUserId
+	 * @param trainingDate
+	 * @param deleteFlg
+	 * @return 未入力件数
 	 */
 	Integer notEnterCount(@Param("lmsUserId") Integer lmsUserId,
-			@Param("trainingDate") Date trainingDate, @Param("deleteFlg") Short deleteFlg);
-
+			@Param("deleteFlg") Short deleteFlg,@Param("trainingDate") Date trainingDate);
 }
 

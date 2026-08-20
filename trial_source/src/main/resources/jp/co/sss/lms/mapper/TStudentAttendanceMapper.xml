@@ -88,6 +88,9 @@
 	
 	
 	
+	<!-- 未入力件数カウントのSQL
+	@author t-kasatsugu-Task.26 -->
+	
 	<select id="notEnterCount" resultType="Integer">
 
 	    SELECT
@@ -98,6 +101,7 @@
 	        lms_user_id = #{lmsUserId}
 	        AND delete_flg = #{deleteFlg}
 	        AND training_date <![CDATA[ < ]]> #{trainingDate}
+	        <!-- 欠席を対象外とする -->
 	        AND status != 1
 	        AND (
 	            training_start_time = ''
