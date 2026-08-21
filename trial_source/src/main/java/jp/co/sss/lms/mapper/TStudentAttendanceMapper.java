@@ -70,7 +70,7 @@ public interface TStudentAttendanceMapper {
 	/**
 	 * 勤怠情報未入力チェック
 	 * 
-	 * @author t-kasatsugu-Task.26
+	 * @author t-kasatsugu-Task.25
 	 * @param lmsUserId
 	 * @param trainingDate
 	 * @param deleteFlg

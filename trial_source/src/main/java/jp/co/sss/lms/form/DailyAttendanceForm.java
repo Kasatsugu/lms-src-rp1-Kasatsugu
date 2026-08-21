@@ -47,6 +47,10 @@ public class DailyAttendanceForm {
 	/** インデックス */
 	private String index;
 	
+	/**
+	 * フィールドの作成
+	 * @author t-kasatsugu-Task.26
+	 */
 	/** 出勤(時間) */
 	private Integer trainingStartTimeHour;
 	/** 出勤(分) */

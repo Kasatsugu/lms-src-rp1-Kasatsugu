@@ -207,6 +207,7 @@ public class StudentAttendanceService {
 	/**
 	 * 勤怠フォームへ設定
 	 * 
+	 * @author t-kasatsugu-Task.26
 	 * @param attendanceManagementDtoList
 	 * @return 勤怠編集フォーム
 	 */
@@ -225,6 +226,7 @@ public class StudentAttendanceService {
 		attendanceForm.setHourMap(attendanceUtil.getHourMap());
 		attendanceForm.setMinuteMap(attendanceUtil.getMinuteMap());
 		//ここまで↑
+		
 		// 途中退校している場合のみ設定
 		if (loginUserDto.getLeaveDate() != null) {
 			attendanceForm
@@ -390,7 +392,7 @@ public class StudentAttendanceService {
 	/**
 	 * 勤怠管理・未入力チェック
 	 * 
-	 * @author t-kasatsugu-Task.26
+	 * @author t-kasatsugu-Task.25
 	 * @return カウント結果
 	 * @throws ParseException
 	 */

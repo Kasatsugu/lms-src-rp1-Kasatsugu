@@ -149,6 +149,8 @@ public class AttendanceUtil {
 
 	/**
 	 * 時間のプルダウン
+	 * @author t-kasatsugu-Task.26
+	 * @return 時間マップ
 	 */
 
 	public LinkedHashMap<Integer, String> getHourMap() {
@@ -164,6 +166,8 @@ public class AttendanceUtil {
 
 	/**
 	 * 分のプルダウン
+	 * @author t-kasatsugu-Task.26
+	 * @return 分マップ
 	 */
 
 	public LinkedHashMap<Integer, String> getMinuteMap() {
@@ -179,6 +183,8 @@ public class AttendanceUtil {
 
 	/**
 	 * 時間（時）の切り出し
+	 * @author t-kasatsugu-Task.26
+	 * @return 切り出した数字　例9:30→9
 	 */
 	public Integer getHour(String time) {
 		if (time == null || time.isEmpty()) {
@@ -190,6 +196,8 @@ public class AttendanceUtil {
 
 	/**
 	 * 時間（分）の切り出し
+	 * @author t-kasatsugu-Task.26
+	 * @return 切り出した数字　例9:30→30
 	 */
 	public Integer getMinute(String time) {
 		if (time == null || time.isEmpty()) {

@@ -51,15 +51,13 @@ public class AttendanceController {
 		/**
 		 * 未入力チェック
 		 * 
-		 * @author t-kasatsugu-Task.26
+		 * @author t-kasatsugu-Task.25
 		 * ログインユーザの未入力勤怠情報を確認する。
 		 * studentAttendanceService.notEnterCheck() にログインユーザIDと削除フラグ（未削除）を渡し、
 		 * 未入力の勤怠情報が存在するかを判定する。
 		 * 判定結果を notEnterCheck に格納する。  Task25kasatsugu
 		 */
 		Boolean notEnterCheck = studentAttendanceService.notEnterCheck();
-		
-		System.out.println("notEnterCheck = " + notEnterCheck);
 
 	    model.addAttribute("notEnterCheck", notEnterCheck);
 
